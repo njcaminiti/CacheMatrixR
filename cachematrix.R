@@ -1,10 +1,3 @@
-## These functions behaves the same as the makevector and cachemean functions
-## given in this assignment as examples, except that, instead of alowing the 
-## user to avoid repeatedly calculating the mean of a numeric set, these allow
-## the user to avoid repeatedly calculating the inverse of a (square) matrix.
-
-
-
 ## Running makeCacheMatrix on an input matrix saves that matrix in a special
 ## object form that the second function (cacheSolve) can understand, namely a 
 ## list of 'set', 'get', 'setinverse', and 'getinverse' functions that will be 
@@ -23,8 +16,6 @@ makeCacheMatrix <- function(x = matrix()) {
              setinverse = setinverse,
              getinverse = getinverse)
 }
-
-
 
 ## This is where the inverse of matrix x is actually calculated.  If this has 
 ## already been done (if i is not NULL), the inverse "i" is simply returned. 
